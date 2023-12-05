@@ -18,7 +18,7 @@ using (HttpClient client = new())
         Console.WriteLine(resposta.Content.ReadAsStringAsync().Result);
         // Console.WriteLine($"Código do fornecedor:{fornecedores.Codigo}");
         // Console.WriteLine($"Código do fornecedor:{fornecedores.Uf}");
-        //Console.WriteLine(DetalhesAPI);
+        //Console.WriteLine(DetalhesAPI());
 
 
         //Console.WriteLine(value);
