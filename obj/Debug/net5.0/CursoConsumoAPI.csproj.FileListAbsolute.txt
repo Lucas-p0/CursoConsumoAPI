@@ -1,4 +1,3 @@
-C:\Projetos\AutoPlay\CursoConsumoAPI\obj\Debug\net5.0\CursoConsumoAPI.csproj.AssemblyReference.cache
 C:\Projetos\AutoPlay\CursoConsumoAPI\obj\Debug\net5.0\CursoConsumoAPI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projetos\AutoPlay\CursoConsumoAPI\obj\Debug\net5.0\CursoConsumoAPI.AssemblyInfoInputs.cache
 C:\Projetos\AutoPlay\CursoConsumoAPI\obj\Debug\net5.0\CursoConsumoAPI.AssemblyInfo.cs
@@ -8,9 +7,10 @@ C:\Projetos\AutoPlay\CursoConsumoAPI\bin\Debug\net5.0\CursoConsumoAPI.deps.json
 C:\Projetos\AutoPlay\CursoConsumoAPI\bin\Debug\net5.0\CursoConsumoAPI.runtimeconfig.json
 C:\Projetos\AutoPlay\CursoConsumoAPI\bin\Debug\net5.0\CursoConsumoAPI.runtimeconfig.dev.json
 C:\Projetos\AutoPlay\CursoConsumoAPI\bin\Debug\net5.0\CursoConsumoAPI.dll
-C:\Projetos\AutoPlay\CursoConsumoAPI\bin\Debug\net5.0\ref\CursoConsumoAPI.dll
 C:\Projetos\AutoPlay\CursoConsumoAPI\bin\Debug\net5.0\CursoConsumoAPI.pdb
 C:\Projetos\AutoPlay\CursoConsumoAPI\obj\Debug\net5.0\CursoConsumoAPI.dll
 C:\Projetos\AutoPlay\CursoConsumoAPI\obj\Debug\net5.0\ref\CursoConsumoAPI.dll
 C:\Projetos\AutoPlay\CursoConsumoAPI\obj\Debug\net5.0\CursoConsumoAPI.pdb
 C:\Projetos\AutoPlay\CursoConsumoAPI\obj\Debug\net5.0\CursoConsumoAPI.genruntimeconfig.cache
+C:\Projetos\AutoPlay\CursoConsumoAPI\obj\Debug\net5.0\CursoConsumoAPI.sourcelink.json
+C:\Projetos\AutoPlay\CursoConsumoAPI\obj\Debug\net5.0\refint\CursoConsumoAPI.dll
