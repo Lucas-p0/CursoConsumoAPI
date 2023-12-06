@@ -14,8 +14,8 @@ using (HttpClient client = new())
         var musicas = JsonSerializer.Deserialize<List<Musica>>(response);
         //LinqFilter.FiltraArtistaPorGenero(musicas);
         //LinqFilter.FiltraTodosOsGeneros(musicas);
-        LinqFilter.FiltraMusicaPorArtista(musicas);
-        //LinqFilter.FiltraArtistaPorNome(musicas);
+        //LinqFilter.FiltraMusicaPorArtista(musicas);
+        LinqFilter.FiltraArtistaPorNome(musicas);
         //Console.WriteLine(response);
         //musicas[0].ExibeGeneroMusical();
         //musicas[177].ExibeFichaTecnica();

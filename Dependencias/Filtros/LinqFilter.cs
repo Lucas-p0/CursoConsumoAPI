@@ -18,8 +18,9 @@ namespace CursoConsumoAPI.Dependencias.Filtros
         }
         public static void FiltraArtistaPorNome(List<Musica> musicas)
         {
-            var todosOsArtista = musicas.Select(artista => artista.Artista).Distinct().ToList();
-            todosOsArtista.Sort();
+            // var todosOsArtista = musicas.Select(artista => artista.Artista).Distinct().ToList();
+            // todosOsArtista.Sort();
+            var todosOsArtista = musicas.OrderBy(musica => musica.Artista).Select(musica => musica.Artista).Distinct().ToList();
             foreach (var artista in todosOsArtista)
             {
                 Console.WriteLine($"{artista}");
@@ -27,9 +28,10 @@ namespace CursoConsumoAPI.Dependencias.Filtros
         }
         public static void FiltraArtistaPorGenero(List<Musica> musicas)
         {
-            var todosOsArtista = musicas.Select(artista => artista.Artista).Distinct().ToList();
-            todosOsArtista.Sort();
+            // var todosOsArtista = musicas.Select(artista => artista.Artista).Distinct().ToList();
+            // todosOsArtista.Sort();
             // Gênero musical a ser filtrado
+            var artistasPorGeneroMusical = musicas.Where(List < Musica > musicas, string genero)
             string generoFiltrado = "rock";
 
             // Filtrando artistas por gênero
