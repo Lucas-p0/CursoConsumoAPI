@@ -26,23 +26,24 @@ namespace CursoConsumoAPI.Dependencias.Filtros
                 Console.WriteLine($"{artista}");
             }
         }
-        public static void FiltraArtistaPorGenero(List<Musica> musicas)
+        public static void FiltraArtistaPorGenero(List<Musica> musicas, string genero)
         {
             // var todosOsArtista = musicas.Select(artista => artista.Artista).Distinct().ToList();
             // todosOsArtista.Sort();
             // Gênero musical a ser filtrado
-            var artistasPorGeneroMusical = musicas.Where(List < Musica > musicas, string genero)
-            string generoFiltrado = "rock";
-
-            // Filtrando artistas por gênero
-            List<Musica> artistasFiltrado = musicas.Where(a => a.Genero.Equals(generoFiltrado, StringComparison.OrdinalIgnoreCase)).ToList();
-
-            Console.WriteLine($"Artista do genero filtrado{generoFiltrado}");
-            foreach (var artista in artistasFiltrado)
+            // string generoFiltrado = "rock";
+            // // Filtrando artistas por gênero
+            // List<Musica> artistasFiltrado = musicas.Where(a => a.Genero.Equals(generoFiltrado, StringComparison.OrdinalIgnoreCase)).ToList();
+            // Console.WriteLine($"Artista do genero filtrado{generoFiltrado}");
+            // foreach (var artista in artistasFiltrado)
+            // {
+            //     Console.WriteLine($"{artista.Artista} - {artista.Genero}");
+            // }
+            var artistasPorGeneroMusical = musicas.Where(musica => musica.Genero.Contains(genero)).Select(musica => musica.Artista).Distinct().ToList();
+            foreach (var artista in artistasPorGeneroMusical)
             {
-                Console.WriteLine($"{artista.Artista} - {artista.Genero}");
+                Console.WriteLine($"{artista}");
             }
-
 
         }
         //Filtrar as músicas de um artista.

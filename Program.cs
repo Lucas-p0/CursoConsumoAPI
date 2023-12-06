@@ -12,10 +12,10 @@ using (HttpClient client = new())
     {
         string response = await client.GetStringAsync(URL_API);
         var musicas = JsonSerializer.Deserialize<List<Musica>>(response);
-        //LinqFilter.FiltraArtistaPorGenero(musicas);
+        LinqFilter.FiltraArtistaPorGenero(musicas, "rock");
         //LinqFilter.FiltraTodosOsGeneros(musicas);
         //LinqFilter.FiltraMusicaPorArtista(musicas);
-        LinqFilter.FiltraArtistaPorNome(musicas);
+        //LinqFilter.FiltraArtistaPorNome(musicas);
         //Console.WriteLine(response);
         //musicas[0].ExibeGeneroMusical();
         //musicas[177].ExibeFichaTecnica();
