@@ -17,9 +17,17 @@ namespace CursoConsumoAPI.Dependencias.Modelo
         {
             ListaDeMusicasFavoritas.Add(musica);
         }
-        public static void ExibirMusicasFavoritas(Musica musica)
+        public void ExibirMusicasFavoritas(Musica musica)
         {
-            Console.WriteLine();
+            Console.WriteLine($"Essas são as músicas favoritas- {Nome}");
+        }
+        public void ExibirMusicasFavoritas()
+        {
+            System.Console.WriteLine($"Essas são as músicas favoritas - {Nome}");
+            foreach (var musica in ListaDeMusicasFavoritas)
+            {
+                System.Console.WriteLine($"{musica.Nome} de {musica.Artista}");
+            }
         }
     }
 }
