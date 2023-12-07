@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
 
 namespace CursoConsumoAPI.Dependencias.Modelo
 {
     public class MusicasPreferidas
     {
-        public string? Nome { get; set; }
+        public string Nome { get; set; }
         public List<Musica> ListaDeMusicasFavoritas { get; }
 
         public MusicasPreferidas(string nome)
@@ -19,15 +21,25 @@ namespace CursoConsumoAPI.Dependencias.Modelo
         }
         public void ExibirMusicasFavoritas(Musica musica)
         {
-            Console.WriteLine($"Essas são as músicas favoritas- {Nome}");
+            Console.WriteLine($"Essas são as musicas favoritas- {Nome}");
         }
         public void ExibirMusicasFavoritas()
         {
-            System.Console.WriteLine($"Essas são as músicas favoritas - {Nome}");
+            Console.WriteLine($"\nEssas são as músicas favoritas - {Nome}\n");
             foreach (var musica in ListaDeMusicasFavoritas)
             {
-                System.Console.WriteLine($"{musica.Nome} de {musica.Artista}");
+                Console.WriteLine($"{musica.Nome} - {musica.Artista}");
             }
+        }
+        public void GeraArquivoJson()
+        {
+            string json = JsonSerializer.Serialize(new
+            {
+                nome = Nome,
+                musicas = ListaDeMusicasFavoritas
+            });
+            string nomeDoArquivo = $"Músicas favoritas-{Nome}.Json";
+            File.WriteAllText(nomeDoArquivo, json);
         }
     }
 }
