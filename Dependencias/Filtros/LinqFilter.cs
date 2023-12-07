@@ -47,12 +47,14 @@ namespace CursoConsumoAPI.Dependencias.Filtros
 
         }
         //Filtrar as músicas de um artista.
-        public static void FiltraMusicaPorArtista(List<Musica> musicas)
+        public static void FiltraMusicaPorArtista(List<Musica> musicas, string nomeDoArtista)
         {
-            var todasAsMusicas = musicas.Select(nomeMusica => nomeMusica.Nome).Distinct().ToList();
-            todasAsMusicas.Sort();
-            string artistaFiltrado = "Panic! At The Disco";
-            List<Musica> listArtistasFiltrado = musicas.Where(a => a.Artista.Equals(artistaFiltrado, StringComparison.OrdinalIgnoreCase)).ToList();
+            // var todasAsMusicas = musicas.Select(nomeMusica => nomeMusica.Nome).Distinct().ToList();
+            // todasAsMusicas.Sort();
+            // string artistaFiltrado = "Panic! At The Disco";
+            // List<Musica> listArtistasFiltrado = musicas.Where(a => a.Artista.Equals(artistaFiltrado, StringComparison.OrdinalIgnoreCase)).ToList();
+            var listArtistasFiltrado = musicas.Where(musicas => musicas.Artista!.Equals(nomeDoArtista)).ToList();
+            Console.WriteLine(nomeDoArtista);
 
             Console.WriteLine($"As musicas do Artista são: \n");
             foreach (var artista in listArtistasFiltrado)
