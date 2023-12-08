@@ -20,16 +20,19 @@ using (HttpClient client = new())
         minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[17]);
         minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[33]);
 
+
+
+
         //minhaMusicasFavoritas.ExibirMusicasFavoritas();
         //minhaMusicasFavoritas.GeraArquivoJson();
         //LinqFilter.FiltraArtistaPorGenero(musicas, "rock");
         //LinqFilter.FiltraTodosOsGeneros(musicas);
         //LinqFilter.FiltraMusicaPorArtista(musicas, "Panic! At The Disco");
         //LinqFilter.FiltraArtistaPorNome(musicas);
-        LinqFilter.FiltraTonalidadeDaMusica(musicas);
+
         //Console.WriteLine(response);
         //musicas[0].ExibeGeneroMusical();
-        //musicas[177].ExibeFichaTecnica();
+        musicas[177].ExibeFichaTecnica();
     }
     catch (Exception ex)
     {
