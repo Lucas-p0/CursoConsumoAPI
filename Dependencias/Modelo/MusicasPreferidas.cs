@@ -40,6 +40,7 @@ namespace CursoConsumoAPI.Dependencias.Modelo
             });
             string nomeDoArquivo = $"Músicas favoritas-{Nome}.Json";
             File.WriteAllText(nomeDoArquivo, json);
+            System.Console.WriteLine($"O aqruivo foi criado com sucesso! Caminho: {Path.GetFullPath(nomeDoArquivo)}");
         }
     }
 }
