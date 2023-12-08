@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "iyGkAQxFqKdobriEqmKcj2AM6QsWsyJUK3C2cRlB77McVVoY+bkJ4oqpm2aILL5AK2hXF3CpmktORQX904Vpgg==",
+  "dgSpecHash": "8o/8d1LeB7L33CzxChaj6JcE1x+XxkHxkFXTXeBCoRsYxtqsc48WGNZ8lggNOM1YWh+G3gZN6olvIohJm65WnA==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\AutoPlay\\CursoConsumoAPI\\CursoConsumoAPI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Lucas.pinheiro\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Lucas.pinheiro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Lucas.pinheiro\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Lucas.pinheiro\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

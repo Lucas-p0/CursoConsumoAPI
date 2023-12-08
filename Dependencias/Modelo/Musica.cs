@@ -22,6 +22,9 @@ namespace CursoConsumoAPI.Dependencias.Modelo
         [JsonPropertyName("genre")]
         public string Genero { get; set; }
 
+        [JsonPropertyName("key")]
+        public int Tonalidade { get; set; }
+
         public void ExibeFichaTecnica()
         {
             Console.WriteLine($"Nome da musica: {Nome}");
@@ -29,6 +32,7 @@ namespace CursoConsumoAPI.Dependencias.Modelo
             Console.WriteLine($"Ducação da musica: {Duracao / 1000}");
             Console.WriteLine($"Nome da musica: {Genero}");
         }
+
 
     }
 }
