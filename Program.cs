@@ -32,7 +32,9 @@ using (HttpClient client = new())
 
         //Console.WriteLine(response);
         //musicas[0].ExibeGeneroMusical();
-        musicas[177].ExibeFichaTecnica();
+
+        LinqFilter.FiltarMusicasPorTonalidade(musicas, "C");
+        //musicas[177].ExibeFichaTecnica();
     }
     catch (Exception ex)
     {

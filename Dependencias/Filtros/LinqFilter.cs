@@ -29,19 +29,20 @@ namespace CursoConsumoAPI.Dependencias.Filtros
             }
         }
 
+
         public static void FiltraArtistaPorGenero(List<Musica> musicas, string genero)
         {
             // var todosOsArtista = musicas.Select(artista => artista.Artista).Distinct().ToList();
             // todosOsArtista.Sort();
             // Gênero musical a ser filtrado
-            // string generoFiltrado = "rock";
+            string generoFiltrado = "rock";
             // // Filtrando artistas por gênero
-            // List<Musica> artistasFiltrado = musicas.Where(a => a.Genero.Equals(generoFiltrado, StringComparison.OrdinalIgnoreCase)).ToList();
-            // Console.WriteLine($"Artista do genero filtrado{generoFiltrado}");
-            // foreach (var artista in artistasFiltrado)
-            // {
-            //     Console.WriteLine($"{artista.Artista} - {artista.Genero}");
-            // }
+            List<Musica> artistasFiltrado = musicas.Where(a => a.Genero.Equals(generoFiltrado, StringComparison.OrdinalIgnoreCase)).ToList();
+            Console.WriteLine($"Artista do genero filtrado{generoFiltrado}");
+            foreach (var artista in artistasFiltrado)
+            {
+                Console.WriteLine($"{artista.Artista} - {artista.Genero}");
+            }
             var artistasPorGeneroMusical = musicas.Where(musica => musica.Genero.Contains(genero)).Select(musica => musica.Artista).Distinct().ToList();
             foreach (var artista in artistasPorGeneroMusical)
             {
@@ -63,6 +64,17 @@ namespace CursoConsumoAPI.Dependencias.Filtros
             foreach (var artista in listArtistasFiltrado)
             {
                 Console.WriteLine($"{artista.Nome} - {artista.Artista}");
+            }
+        }
+        public static void FiltarMusicasPorTonalidade(List<Musica> musicas, string tonalidade)
+        {
+            var MusicasPorTonalidade = musicas.Where(musicas => musicas.Tonalidade.Equals(tonalidade)).ToList();
+
+            Console.WriteLine($"Essas são as musicas na {tonalidade}:\n");
+
+            foreach (var nota in MusicasPorTonalidade)
+            {
+                Console.WriteLine($"{nota.Nome}");
             }
         }
 
