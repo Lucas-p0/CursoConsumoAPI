@@ -68,7 +68,7 @@ namespace CursoConsumoAPI.Dependencias.Filtros
         }
         public static void FiltarMusicasPorTonalidade(List<Musica> musicas, string tonalidade)
         {
-            var MusicasPorTonalidade = musicas.Where(musicas => musicas.Tonalidade.Equals(tonalidade)).ToList();
+            var MusicasPorTonalidade = musicas.Where(musicas => musicas.Tonalidade.Equals(tonalidade)).Distinct().ToList();
 
             Console.WriteLine($"Essas são as musicas na {tonalidade}:\n");
 
