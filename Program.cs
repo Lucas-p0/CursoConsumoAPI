@@ -32,8 +32,8 @@ using (HttpClient client = new())
 
         //Console.WriteLine(response);
         //musicas[0].ExibeGeneroMusical();
-
-        LinqFilter.FiltarMusicasPorTonalidade(musicas, "F");
+        string tomDaMusica = "D";
+        LinqFilter.FiltarMusicasPorTonalidade(musicas, tomDaMusica);
         //musicas[177].ExibeFichaTecnica();
     }
     catch (Exception ex)
