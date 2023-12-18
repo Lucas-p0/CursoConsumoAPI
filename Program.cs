@@ -28,12 +28,12 @@ using (HttpClient client = new())
         //LinqFilter.FiltraArtistaPorGenero(musicas, "rock");
         //LinqFilter.FiltraTodosOsGeneros(musicas);
         //LinqFilter.FiltraMusicaPorArtista(musicas, "Panic! At The Disco");
-        //LinqFilter.FiltraArtistaPorNome(musicas);
+        LinqFilter.FiltraArtistaPorNome(musicas);
 
         //Console.WriteLine(response);
         //musicas[0].ExibeGeneroMusical();
-        string tomDaMusica = "D";
-        LinqFilter.FiltarMusicasPorTonalidade(musicas, tomDaMusica);
+        // string tomDaMusica = "D";
+        // LinqFilter.FiltarMusicasPorTonalidade(musicas, tomDaMusica);
         //musicas[177].ExibeFichaTecnica();
     }
     catch (Exception ex)
