@@ -12,13 +12,13 @@ using (HttpClient client = new())
     {
         string response = await client.GetStringAsync(URL_API);
         var musicas = JsonSerializer.Deserialize<List<Musica>>(response);
-        var minhaMusicasFavoritas = new MusicasPreferidas("Lucas");
+        // var minhaMusicasFavoritas = new MusicasPreferidas("Lucas");
 
-        minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[145]);
-        minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[77]);
-        minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[29]);
-        minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[17]);
-        minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[33]);
+        // minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[145]);
+        // minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[77]);
+        // minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[29]);
+        // minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[17]);
+        // minhaMusicasFavoritas.AdicionarMusicasFavoritas(musicas[33]);
 
 
 
